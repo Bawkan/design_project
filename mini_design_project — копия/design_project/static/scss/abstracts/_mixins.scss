@@ -1,0 +1,94 @@
+// Breakpoints
+//For Works section
+@mixin for-screen-320 {
+  @media (width: 320px)  {
+    @content;
+  }
+}
+@mixin for-screen-360 {
+  @media (width: 360px){
+    @content;
+  }
+}
+@mixin for-screen-375 {
+  @media (width: 375px){
+    @content;
+  }
+}
+@mixin for-screen-390-400 {
+  @media (min-width: 390px) and (max-width:400px){
+    @content;
+  }
+}
+@mixin for-screen-401-415 {
+  @media (min-width: 401px) and (max-width:415px){
+    @content;
+  }
+}
+@mixin for-screen-481-575 {
+  @media (min-width: 481px) and (max-width: 575px) {
+    @content;
+  }
+}
+@mixin for-screen-max-480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin for-screen-max-575 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+@mixin for-screen-min-575 {
+  @media (min-width: 575px) {
+    @content;
+  }
+}
+@mixin for-screen-max-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin for-screen-max-991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-screen-576-767 {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-screen-768-991 {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-screen-992-1024 {
+  @media (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-screen-1025-1199 {
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-screen-1200-1399 {
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+@mixin for-screen-1400-1800 {
+  @media (min-width: 1400px) and (max-width: 1800) {
+    @content;
+  }
+}
+
+/* My breackpoints */

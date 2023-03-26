@@ -1,0 +1,314 @@
+/*--------------------------------------------------------------
+    [ ## Sections ]
+--------------------------------------------------------------*/
+
+/*-------------------------------------------------
+    [ ### brand block ]
+*/
+
+.section-works {
+    margin-top: 163px;
+    @include for-screen-max-575 {
+        margin-top: 270px !important;
+    }
+    .works-title {
+        margin-bottom: 29px;
+
+        @include for-screen-max-575 {
+            margin-bottom: 15px;
+        }
+        .title {
+            font-weight: 400;
+        }
+        h1 {
+            font-weight: 400;
+        }
+    }
+    .works-wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 550px;
+        // padding-right: 25px;
+
+        @include for-screen-max-575 {
+            // padding-right: 5px;
+            height: 280px;
+        }
+
+        .card-box {
+            height: 100%;
+            margin-right: 33px;
+
+            @media screen and (max-width: 1399px) {
+                margin-right: 16px;
+            }
+
+            .card-image {
+                @include for-screen-max-575 {
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 202px;
+
+                    @include for-screen-max-575 {
+                        height: 98px;
+                    }
+                }
+
+                .small-image {
+                    max-width: 200px;
+                    width: 100%;
+
+                    @include for-screen-320 {
+                        max-width: 78px;
+                        height: 78px;
+                    }
+                    @include for-screen-360 {
+                        max-width: 98px;
+                        height: 98px;
+                    }
+                    @include for-screen-375 {
+                        max-width: 98px;
+                        height: 98px;
+                    }
+                    @include for-screen-390-400 {
+                        max-width: 98px;
+                        height: 98px;
+                    }
+                    @include for-screen-401-415 {
+                        max-width: 115px;
+                        height: 98px;
+                    }
+
+                    @media screen and (width: 540px) {
+                        max-width: 98px;
+                    }
+                    @include for-screen-576-767 {
+                        max-width: 98px;
+                        height: 98px;
+                    }
+                    @include for-screen-992-1024 {
+                        max-width: 145px;
+                        height: 145px;
+                    }
+                }
+                .full-image {
+                    max-width: 355px;
+                    width: 100%;
+                    @include for-screen-320 {
+                        max-width: 125px;
+                        height: 78px;
+                    }
+                    @include for-screen-360 {
+                        max-width: 145px;
+                        height: 98px;
+                    }
+                    @include for-screen-375 {
+                        max-width: 155px;
+                        height: 98px;
+                    }
+                    @include for-screen-390-400 {
+                        max-width: 175px;
+                        height: 98px;
+                    }
+                    @include for-screen-401-415 {
+                        max-width: 185px;
+                        height: 98px;
+                    }
+                    @media screen and (width: 540px) {
+                        width: 175px;
+                    }
+
+                    @include for-screen-576-767 {
+                        max-width: 175px;
+                        height: 98px;
+                    }
+                    @include for-screen-992-1024 {
+                        max-width: 255px;
+                        height: 145px;
+                    }
+                }
+            }
+            .rotated {
+            }
+            .card-block {
+                margin-top: 26.8px;
+                margin-bottom: 26.8px;
+                @media (max-width: 499px) {
+                }
+                @media (min-width: 499px) and (max-width: 575px) {
+                }
+                @include for-screen-max-575 {
+                    margin-top: 9px;
+                    margin-bottom: 12.7px;
+                }
+
+                .title {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $border-color;
+                    @include for-screen-max-575 {
+                        font-size: 6px;
+                    }
+                }
+                .subtitle {
+                    font-style: italic;
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $border-color;
+                    @include for-screen-max-575 {
+                        font-size: 6px;
+                    }
+                }
+                .position {
+                    font-style: italic;
+                    color: $grey-color;
+                    font-size: 8px;
+                    @include for-screen-max-575 {
+                        font-size: 5px;
+                    }
+                }
+            }
+        }
+        .my-row {
+            justify-content: stretch !important;
+            white-space: nowrap !important;
+            .my-col {
+                align-self: stretch !important;
+                white-space: nowrap !important;
+            }
+        }
+    }
+}
+.projects {
+    .projects-title {
+        margin-bottom: 57px;
+        @include for-screen-max-575 {
+            margin-bottom: 26px;
+        }
+        .title {
+            font-size: 32px;
+            margin-bottom: 23px;
+            font-weight: 400;
+            color: $border-color;
+            @include for-screen-max-575 {
+                font-size: 16px;
+                margin-bottom: 14px;
+            }
+        }
+        .subtitle {
+            font-style: italic;
+            font-weight: 400;
+            color: $border-color;
+            margin-bottom: 14px;
+            @include for-screen-max-575 {
+                font-size: 12px;
+            }
+        }
+        .position {
+            font-style: italic;
+            color: $grey-color;
+            font-size: 26px;
+            font-weight: 300;
+
+            @include for-screen-max-575 {
+                font-size: 12px;
+            }
+        }
+    }
+    .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 91px;
+        @include for-screen-max-575 {
+            padding-bottom: 50px;
+        }
+
+        .image-box {
+            img {
+            }
+        }
+        .content {
+            padding-top: 20%;
+
+            @include for-screen-max-575 {
+                padding-top: 5%;
+            }
+
+            p {
+                font-size: 16px;
+                @include for-screen-max-575 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .reversed-row:nth-child(2n) .col-sm-6:first-child {
+        @include for-screen-max-575 {
+            order: 2;
+        }
+    }
+}
+.shop {
+    .shop-title {
+        margin-bottom: 46px;
+
+        @include for-screen-max-575 {
+            margin-bottom: 32px;
+        }
+        .title {
+            font-weight: 400;
+        }
+    }
+    .under-line-wrapper {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 91px;
+
+        @include for-screen-max-575 {
+            padding-bottom: 44px;
+        }
+        .shop-wrapper {
+            overflow-x: auto;
+            // min-height: 350px;
+
+            @include for-screen-max-575 {
+                min-height: 250px;
+            }
+            .image-box {
+                padding-bottom: 82px;
+
+                @include for-screen-max-575 {
+                    padding-bottom: 44px;
+                }
+                img {
+                    height: 513px;
+                    object-fit: cover;
+                    @include for-screen-max-575 {
+                        height: 236px;
+                    }
+                    @include for-screen-576-767 {
+                        height: 350px;
+                    }
+                    @include for-screen-768-991 {
+                        height: 350px;
+                    }
+                    @include for-screen-992-1024 {
+                        height: 300px;
+                    }
+                    @include for-screen-1025-1199 {
+                        height: 400px;
+                    }
+                }
+            }
+            .flex-nowrap {
+                @include for-screen-max-575 {
+                }
+            }
+        }
+    }
+}

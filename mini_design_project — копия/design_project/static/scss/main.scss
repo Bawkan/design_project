@@ -1,0 +1,170 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+    [ ## Heading ] 
+    [ ## Others Typography ]
+# Elements
+    [ ## Font Size ]
+    [ ## Font Weight ]
+    [ ## Margin Element ]
+    [ ## Padding Element ]
+    [ ## Color Element ]
+    [ ## Background Element ]
+    [ ## Extra Background ]
+    [ ## Social Element ]
+    [ ## Overlay Element ]
+    [ ## Lists ]
+    [ ## Post, Page, Comments Table ]
+    [ ## Others Element ]
+    [ ## Grid Element ]
+# Forms
+	[ ## Buttons ]
+	[ ## Fields ]
+# Header Content
+	[ ## Preloader ]
+	[ ## Header ]
+    [ ## Sticky header ]
+# layout
+    [ ## Hero Block ]
+    [ ## Features ]
+    [ ## Team ]
+    [ ## Testimonial ]
+    [ ## Sections ]
+        [ ### Features Block ]
+        [ ### Network Location ]
+        [ ### Discount Block ]
+        [ ### Vission Mission Block ]
+        [ ### Work Brand ]
+        [ ### Announcement ]
+        [ ### Pricing ]
+        [ ### Faqs ]
+        [ ### Support Ticket ]
+        [ ### Call To Action ]
+        [ ### Founder Message Block ]
+        [ ### Fan Fact Block ]
+    [ ## Blog ]
+# site content
+	[ ## About Page ]
+	[ ## Contact Page ]
+	[ ## 404 Page ]
+	[ ## Registration Page ]
+	[ ## Posts and pages ]
+	    [ ### Page Title ]
+	    [ ### Breadcrumb ]
+	    [ ### Page info Content ]
+	[ ## Comments ]
+	[ ## Widgets ]
+	[ ## Widgets Content ]
+# Footer
+/*--------------------------------------------------------------
+# abstracts
+--------------------------------------------------------------*/
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/pages";
+
+.my-container{
+    max-width: 1720px;
+    padding-left: 234px;
+    padding-right: 234px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-screen-max-480{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+    @include for-screen-max-575{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+    @include for-screen-576-767{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+    @include for-screen-768-991{
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+    @media screen and (width: 820px){
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+    @media screen and (width: 912px){
+        padding-left: 148px;
+        padding-right: 148px;
+    }
+    
+    @include for-screen-992-1024{
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    @include for-screen-1025-1199{
+
+    }
+    @include for-screen-1200-1399{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media screen and (width:1512px){
+        padding-left: 130px;
+        padding-right: 130px;
+     }
+     @media screen and (width:1366px){
+        padding-left: 90px;
+        padding-right: 90px;
+     }
+     @media screen and (width:1440px){
+        padding-left: 95px;
+        padding-right: 95px;
+     }
+     @media screen and (width:1600px){
+        padding-left: 175px;
+        padding-right: 175px;
+     }
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include for-screen-max-575{
+        
+    }
+
+ 
+
+    @include for-screen-max-575{
+        
+    }
+    .my-col{
+        // max-width: 355px !important;
+    }
+
+    
+    
+    
+    
+}
+
+
+

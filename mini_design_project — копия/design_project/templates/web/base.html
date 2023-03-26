@@ -1,0 +1,188 @@
+<html lang="en">
+    <head>
+        {% load static %}
+        {% load embed_video_tags %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap link -->
+        <link rel="stylesheet" href="{% static 'lib/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css' %}">
+        <!-- Fontawsome link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
+        <title>Chingiz</title>
+    </head>
+    <body class="body">
+        <header>
+            <div class="header-nav">
+                <div class="my-container">
+                    <div class="my-row">
+                        <div class="logo">
+                            <a href="{% url 'design_project:design' %}" class="logo-link">
+                                <img src="{% static 'assets/images/logo.svg' %}" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="nav-right d-flex">
+                            <div class="links">
+                                <a href="{% url 'design_project:design' %}" class="link active">About J.</a>
+                                <a href="{% url 'design_project:shop' %}" class="link">Shop</a>
+                            </div>
+                            <ul class="social-links d-flex ">
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'assets/icons/instagram.svg' %}" class="social-icon" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'assets/icons/imdb.svg' %}" class="social-icon" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'assets/icons/linkedin.svg' %}" class="social-icon" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-mobile">
+                <a href="index.html" class="logo-link">
+                    <img src="{% static 'assets/images/logo-large.svg' %}" alt="" class="logo-img">
+                </a>
+                <div class="my-container">
+                    <div class="nav-right d-flex">
+                        <div class="links">
+                            <a href="projects.html" class="link active">About J.</a>
+                            <a href="shop.html" class="link">Shop</a>
+                        </div>
+                        <ul class="social-links d-flex ">
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/icons/instagram.svg' %}" class="social-icon" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/icons/imdb.svg' %}" class="social-icon" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/icons/linkedin.svg' %}" class="social-icon" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------- Navbar mobile ------------------------------------------->
+        </header>
+
+{% block main %}
+{% endblock main %}
+
+{% block projects %}
+{% endblock projects %}
+
+{% block shop %}
+{% endblock shop %}
+
+{% block answer %}
+{% endblock answer %}
+   <footer class="footer-section">
+        <div class="my-container">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="left-side">
+                            <div class="title-flex mb-lg-3 mb-md-3 mb-sm-2">
+                                <div class="about">
+                                    <h1>About J.</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-3">
+                                    <div class="single-card">
+                                        <img src="{% static 'assets/images/chingiz.jpg' %}" alt="">
+                                        <div class="items-block">
+                                            <a href="#" class="name">Chingiz N..</a>
+                                            <p class="position">Position</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-8 col-9">
+                                    <div class="positioned-title"></div>
+                                    <div class="items-wrapper">
+                                        {% for ref in references %}
+                                            <div class="items-card">
+                                                  <div>
+                                                      <a href="https://www.youtube.com/watch?v=0jNnU8h2Oz8">
+                                                      {% video ref.video '210x141'%}
+                                                      </a>
+                                                  </div>
+                                                <div class="items-block">
+                                                    <a href="#" class="name">{{ref.title}}</a>
+                                                    <p class="position">{{ref.description}}</p>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="right-side">
+                            <div class="title-wrapper">
+                                <h1 class="head-title">Contact</h1>
+                                <a href="#" class="icon">
+                                    <img src="{% static 'assets/icons/envelope.svg' %}" alt="">
+                                </a>
+                            </div>
+                            <p class="subtitle">Be a partner in crime.</p>
+                            <div class="form-area">
+                                <form action="{% url 'design_project:answer' %}" method="post" id="form" class="form">
+                                    {% csrf_token %}
+                                    {{form}}
+                                    <div class="top-inputs">
+                                        {{form_contact.name}}
+                                        {{form_contact.name.errors}}
+                                        {{form_contact.phone}}
+                                        {{form_contact.phone.errors}}
+                                    </div>
+                                    <div class="input-button">
+                                        {{form_contact.mail}}
+                                        {{form_contact.mail.errors}}
+                                        <button class="btn--dark">Send</button>
+                                    </div>
+                                        {{form_contact.text}}
+                                        {{form_contact.text.errors}}
+                                </form>
+                                       {% if messages %}
+                                            <ul class="messages">
+                                                {% for message in messages %}
+                                                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'lib/jquery/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

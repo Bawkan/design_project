@@ -1,0 +1,64 @@
+/*-------------------------------------------------
+    [ ### font-variable start ]
+*/
+// $font_heading:  "Euclid circular" ;
+// $font_sub_heading: "Euclid circular" ;
+$font_body:  "Helvetica" ;
+
+
+@font-face {
+    font-family: $font_body;
+    font-style: normal;
+    font-weight:normal;
+    src: url("../../assets/fonts/helvetica-font/HelveticaNeue-Regular.otf") format("truetype"),
+            
+}
+  
+
+/*-------------------------------------------------
+    [ ### font-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_family-variable start ]
+*/
+$font-awesome: 'Font Awesome 5 Free';
+/*-------------------------------------------------
+    [ ### font_family-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_size-variable start ]
+*/
+$base__font-size: 16px;
+$heading__one: 26px;
+
+/*-------------------------------------------------
+    [ ### font_size-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+$font__line-height-body: 1.5em;
+$font__line-height-heading: 1.3em;
+$font__line-height-paragraph: 1.2em;
+$font__line-height-pre: 1.6em;
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+
+/*-------------------------------------------------
+    [ ### initial-color-variable start ]
+*/
+$white: #fff; // white color
+// $body--bg: #F5F5F5; // Body bg color
+ $body--bg: #FDFDFD; // Body bg color
+
+
+$border-color: #121212; // border-color
+$grey-color: #878787
+
+/*-------------------------------------------------
+    [ ### initial-color-variable end ]
+*/

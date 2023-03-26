@@ -1,0 +1,32 @@
+/*-------------------------------------------------
+    [ ## Fields ]
+*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phone"] {
+    &:focus {
+        outline: none;
+    }
+    height: 27px;
+    font-size: 12px;
+}
+
+textarea {
+    
+}
+input,
+select,
+textarea {
+   
+}
+label {
+    
+}
+/*-------------------------------------------------
+    [ ## Forms ]
+*/
+
+
+
+

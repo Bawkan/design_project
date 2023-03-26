@@ -1,0 +1,151 @@
+/*-------------------------------------------------
+    [ ## Preloader ]
+*/
+
+/*-------------------------------------------------
+    [ ## Header ]
+*/
+
+header {
+  @include for-screen-min-575{
+   
+  }
+  
+  .header-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 43px 0;
+    z-index: 900;
+    border-bottom: 1px solid $border-color;
+    background-color: $body--bg;
+   
+    
+
+    .logo-link {
+      @include for-screen-max-575{
+       
+      }
+      .logo-img {
+        &:hover{
+         
+        }
+        @include for-screen-max-575{
+        
+        }
+        @include for-screen-576-767{
+          width: 70px;
+        }
+        @include for-screen-768-991{
+          width: 80px;
+        }
+      }
+    }
+    .nav-right {
+      justify-content: end;
+      gap: 60px;
+      align-items: center;
+      padding-top: 10px;
+      @include for-screen-max-575{
+      
+     
+      }
+      .links {
+        .link {
+          color: #878787;
+          font-weight: 400;
+          transition: all 0.2s ease-in-out;
+          &:hover{
+            color: $border-color;
+          }
+;
+          &:first-child {
+            margin-right: 51px;
+          }
+        }
+        .active {
+          
+          color: $border-color;
+        }
+      }
+      .social-links {
+        @include for-screen-max-575{
+          justify-content: end;
+        }
+        gap: 10px;
+        li {
+          a {
+            .social-icon {
+              transition: all 0.2s ease-in-out;
+              &:hover{
+                -webkit-filter: opacity(.5) drop-shadow(0 0 0 black);  
+                filter: opacity(.5) drop-shadow(0 0 0 black); 
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-nav-mobile{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+    background-color: $body--bg;
+  
+    @include for-screen-min-575{
+      display: none;
+    }
+
+
+    .logo-link{
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid $border-color;
+      padding: 30px 0;
+      
+      .logo-img{
+        @include for-screen-max-575{
+         
+        }
+      
+
+      }
+    }
+    .nav-right{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding-bottom: 25px;
+      .links{
+        display: flex;
+        gap: 25px;
+        .link{
+          font-size: 14px;
+          color: #878787;
+
+        }
+        .active {
+         
+          color: $border-color;
+
+        }
+      }
+      .social-links {
+       
+        gap: 10px;
+        li {
+          a {
+            i {
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,279 @@
+.footer-section {
+    padding-bottom: 20px;
+    padding-top: 45px;
+    @include for-screen-max-575 {
+    }
+    .title-flex {
+        margin-bottom: 28px;
+        @include for-screen-max-575 {
+            margin-bottom: 13px;
+        }
+
+        .about {
+            h1 {
+                font-weight: 400;
+                color: $border-color;
+            }
+        }
+        .reference {
+            p {
+            }
+        }
+    }
+    .positioned-title {
+        position: relative;
+
+        &::after {
+            content: "References";
+            position: absolute;
+            top: -40px;
+            left: 42px;
+            font-size: 16px;
+            color: $border-color;
+            @media screen and (max-width: 400px) {
+                left: 40px;
+            }
+            @media (min-width: 401px) and (max-width: 575px) {
+                left: 20px;
+                
+            }
+            @include for-screen-max-575 {
+                top: -32px;
+                font-size: 12px;
+            }
+            @include for-screen-576-767 {
+                top: -32px;
+                left: 0;
+            }
+            @include for-screen-768-991{
+                left: 0;
+            }
+            @include for-screen-992-1024 {
+                left: 85px;
+            }
+            @include for-screen-1025-1199 {
+                left: 85px;
+            }
+            @include for-screen-1200-1399{
+                left: 65px;
+            }
+        }
+    }
+    .items-wrapper {
+        display: flex;
+        gap: 42px;
+        overflow-x: auto !important;
+        margin-left: 42px;
+
+        @media screen and (max-width: 400px) {
+            gap: 40px;
+            margin-left: 40px;
+        }
+        @media (min-width: 401px) and (max-width: 575px) {
+            gap: 25px;
+            margin-left: 20px;
+        }
+
+        @include for-screen-max-575 {
+            margin-bottom: 30px;
+        }
+        @include for-screen-576-767 {
+            margin-bottom: 30px;
+            gap: 30px;
+            margin-left: 0;
+        }
+        @include for-screen-768-991 {
+            margin-bottom: 30px;
+            // gap: 80px;
+            margin-left: 0;
+        }
+        @include for-screen-992-1024 {
+            gap: 42px;
+            margin-left: 85px;
+        }
+        @include for-screen-1025-1199 {
+            // gap: 100px;
+            margin-left: 85px;
+        }
+        @include for-screen-1200-1399 {
+           margin-left: 65px;
+           
+        }
+
+        .items-card {
+            // width: 252px;
+            //    height: 99px;
+            @include for-screen-max-575 {
+                // width: 177px;
+            }
+
+            img {
+                height: 140px;
+                max-width: 252px;
+                object-fit: cover;
+                
+                @include for-screen-max-575 {
+                    height: 100%;
+                    height: 99px;
+                    width: 177px;
+                }
+            }
+            .items-block {
+                margin-top: 27px;
+                padding-bottom: 19px;
+                @include for-screen-max-575{
+                    margin-top: 19px;
+                }
+                .name {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $border-color;
+                    margin-bottom: 11px;
+                    @include for-screen-max-575 {
+                        margin-bottom: 8px;
+                        font-size: 12px;
+                    }
+                }
+                .position {
+                    font-size: 12px;
+                    font-style: italic;
+                    color: $grey-color;
+                }
+            }
+        }
+    }
+    .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 19px;
+        .head-title {
+            font-weight: 400;
+            font-size: 26px;
+            color: $border-color;
+           
+        }
+        .icon {
+            img {
+                &:hover {
+                    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 black);
+                    filter: opacity(0.5) drop-shadow(0 0 0 black);
+                }
+            }
+        }
+    }
+    .subtitle {
+        padding-bottom: 28px;
+        font-size: 16px;
+    }
+    .form-area {
+        .form {
+            .top-inputs {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+                .input {
+                    width: 100%;
+                    padding-left: 12px;
+                    padding-top: 9px;
+                    padding-bottom: 7px;
+                }
+            }
+            .input-button {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 20px;
+                .input {
+                    width: 280px;
+                    padding-left: 12px;
+                    padding-top: 9px;
+                    padding-bottom: 7px;
+                }
+            }
+            .message-box {
+                width: 100%;
+                height: 97px;
+            }
+        }
+    }
+    .left-side {
+        position: relative;
+        padding-right: 40px;
+        @include for-screen-max-991 {
+            padding-right: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 98%;
+            background-color: #121212;
+            top: 8px;
+            right: 0;
+            @include for-screen-max-991 {
+                display: none;
+            }
+        }
+
+        .single-card {
+            height: 140px;
+            width: 134px;
+
+            @include for-screen-max-575 {
+                height: 99px;
+            }
+            @media screen and (max-width: 400px) {
+                width: 100px;
+            }
+            @media (min-width: 400px) and (max-width: 575px) {
+                width: 100px;
+            }
+            @include for-screen-576-767 {
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                @include for-screen-max-575 {
+                }
+            }
+            .items-block {
+                margin-top: 26px;
+                @include for-screen-max-575{
+                    margin-top: 19px;
+                }
+                .name {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 11px;
+                    color: $border-color;
+                    @include for-screen-max-575 {
+                        margin-bottom: 8px;
+                        font-size: 12px;
+                    }
+                }
+                .position {
+                    font-size: 12px;
+                    font-style: italic;
+                    color: $grey-color;
+                }
+            }
+        }
+    }
+    .right-side {
+        padding-left: 15px;
+        @include for-screen-max-991 {
+            padding-left: 0;
+        }
+    }
+    .footer-wrapper {
+    }
+}
+.top-line {
+    border-top: 1px solid $border-color;
+    margin-top: 60px;
+}
+.row-specific {
+}
